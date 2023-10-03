@@ -1,3 +1,3 @@
 # Heart-Beat
-
+Implemented a simple inter-process communication protocol that exchanges two control packets, Hello and Hello_Ack. Suppose there are five nodes in a network, where each node is fully connected with others. Each node generates a Hello packet periodically by following inter-arrival time. A sender node transmits a Hello packet to a randomly chosen receiver node. Upon receiving, the receiver replies to a Hello_Ack packet and then the transmission is successful. A packet can be lost during the transmission because of an unreliable link quality. Suppose a set of packet loss probabilities is 0.1, 0.2, 0.3, 0.4, and 0.5. If the sender does not receive the Hello_Ack packet within a timeout period (2 seconds), it retransmits a Hello packet. If the sender still does not receive the Hello_Ack packet, then the transmission is failed
 All the steps are clearly written in the report!!
